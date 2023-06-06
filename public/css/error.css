@@ -1,0 +1,52 @@
+/*ERROR MESSAGE*/
+.error {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  width: 60%;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin: 20px;
+  gap:50px;
+}
+.error .error-content  {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: space-between;
+}
+.error .error-content .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+}
+.error .error-content .message p{
+  margin: 0;  
+  text-align: left;
+  font-size: 20px;
+  color: var(--text-color-rich-black);
+}
+.error .error-content .icona  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-btn  {
+  display: flex;
+  margin-left: 50px;
+}
+.error-btn a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--text-color-rich-black);
+  display: flex;
+  transition: 0.25s;
+  align-items: center;
+}
+.error-btn a:hover {
+  color: var(--silver-blue);
+}
+.error-btn a:active{
+  scale: 0.9;
+}

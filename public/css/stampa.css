@@ -1,0 +1,167 @@
+.stampa-title {
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 2rem 0rem;
+  align-self: center;
+  text-align: center;
+}
+
+.div-stampa-coupon {
+  align-self: center;
+  width: 50%;
+  background-color:var(--Y-blue); 
+  color: var(--background-color-platino);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid var(--oxford-blue);
+  box-shadow: 0px 0 20px 0px #0d1b2a8b;
+}
+
+/* Info Azienda */
+.info-azienda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  min-height: 180px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info-azienda img {
+  width: 220px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.div-stampa-coupon .discount{
+  text-align: center;
+  background-color: var(--oxford-blue);
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  letter-spacing: 2px;
+}
+
+.div-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+
+
+.div-stampa-coupon hr {
+  border: 2px dashed white;
+  width: 99%;
+  margin: 0;
+}
+
+
+.promo-campo{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 0;
+  font-size: 30px;
+  width: 60%;
+}
+
+.promo-campo h2{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: 210px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  height: auto;
+}
+
+.promo-campo p {
+  font-size: 16px;
+  max-width: 400px;
+  word-wrap: break-word;
+  text-decoration: none;
+  text-align: left;
+  padding: 0;
+  margin: 10px;
+}
+
+
+.bottom-stampa {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-info> h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.div-info .info-utente-stampa {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.div-info .info-utente-stampa h2 {
+  font-size: 24px;
+}
+.div-info .info-utente-stampa>div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bottom-stampa button {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  height: 45px;
+  width: 130px;
+  border: none;
+  border-radius: 7px;
+  background-color: #0d1b2abd;
+  color: var(--background-color-platino);
+  transition: 0.25s;
+  box-shadow: 0px 0 8px 0px #0d1b2a8b;
+}
+
+.bottom-stampa button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0 25px 0px #0d1b2a8b;
+}
+
+.bottom-stampa button:active {
+  scale: 0.90;
+}
+
+@media print {
+  
+  body {
+    width: 100%;
+  }
+  .div-stampa-coupon {
+    margin-top: 100px;
+    width: 90%;
+    padding: 0 30px;
+  }
+  .div-stampa-coupon img {
+    width: 200px;
+  }
+  .bottom-stampa, .stampa-title {
+      display: none;
+  }
+
+  .div-stampa-coupon {
+      box-shadow: none;
+  }
+}

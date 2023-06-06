@@ -1,0 +1,117 @@
+/*Coupon*/
+.btn-best-offer, .btn-special-offer {
+  background: transparent;
+  border: none;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.conteiner-template {
+  display: flex;
+  flex-direction: row;
+  transition: 0.25s;
+}
+
+/*Ammontare dell'offerta*/
+.conteiner-offer {
+  width: 150px;
+  height: 220px;
+  background-color: var( --oxford-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top: 3px dashed var(--background-color-platino);
+  color: black;
+  box-shadow: 0px 7px 8px 0px #0d1b2a8b;
+}
+
+/*Cerchi per la grafica*/
+.circle-rigth {
+  width: 35px;
+  height: 35px;
+  background-color: var(--background-color-platino);
+  border-radius: 50%;
+  box-shadow: inset 10px 0 10px -10px #0d1b2a8b;    
+  position: relative;
+  top: 58px;
+  transform: translateX(-18px);
+  z-index: 1;
+}
+
+.circle-left {
+  width: 35px;
+  height: 35px;
+  background-color: var(--background-color-platino);
+  border-radius: 50%;
+  position: relative;
+  top: 58px;
+  transform: translateX(+18px);
+  box-shadow: inset -10px 0 10px -10px #0d1b2a8b;  
+}
+
+/*Porzione inferiore del coupon*/
+.conteiner-offer .discount {
+  height: 70px;
+  width: 100%;
+  background-color: var(--oxford-blue);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: 25px bold;
+  color: var(--background-color-platino);
+}
+.conteiner-offer .discount h2, .conteiner-offer .discount h3, .conteiner-offer .discount p {
+  font-family: Roboto,Arial;
+  text-align: center;
+}
+.conteiner-offer hr {
+  border: 1.5px dashed var(--background-color-platino);
+  width: 70%;
+  margin: 0;
+}
+.conteiner-offer .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Y-blue);
+  border: 3px dotted var(--oxford-blue);
+  width: 100%;
+  min-height: 155px;
+  height: 155px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: var(--background-color-platino);
+}
+
+.conteiner-offer .description  h3 {
+  font-size: 18px;
+  margin: 15px 0;
+  text-align: center;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.conteiner-offer .description  p {
+  margin-top: 0;
+  font-size: 16px;
+  height: 70px;
+  width: 80%;
+  text-align: center;
+  max-width: 140px;
+  overflow: hidden;
+  transition: 0.25s;
+  text-overflow: ellipsis;
+}
+
+/*effetti grafici*/
+.conteiner-template:hover {
+  scale: 1.02;
+}
+.conteiner-template:active {
+  scale: 0.98;
+}

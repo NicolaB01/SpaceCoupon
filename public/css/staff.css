@@ -1,0 +1,208 @@
+/* POPUP */
+.staff-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: transparent;
+z-index: 1;
+display: none;
+}
+
+/*CREA MODIFICA PROMOZIONI STANDARD*/
+.create-promotion {
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.create-promotion .create-standard-promotion {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+width: 100%;
+}
+/*HEADER MODIFICA CREA*/
+.header {
+display: grid;
+grid-template-columns: 3fr 6fr;
+align-items: center;
+margin: 50px 0;
+width: 100%;
+}
+.header a{
+text-decoration: none;
+color: var(--text-color-rich-black);
+  transition: 0.25s;
+  text-align: center;
+}
+.header a:hover{
+color: var(--Y-blue);
+}
+.header a:active{
+color:var(--silver-blue);
+}
+.header>h2 {
+font-size: 30px;
+margin: 0 50% 0 0;
+padding: 0;
+text-align: center;
+}
+/*FORM*/
+.create-promotion-form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+width: 550px;
+margin: 0;
+}
+.create-promotion-form .input-div ,.create-promotion-form .input-div-logo{
+display: flex;
+margin: 15px;
+width: 450px;
+}
+.create-promotion-form .input-div.discount,.create-promotion-form .input-div.date  {
+align-items: center;
+}
+
+.create-promotion-form .input-div label,
+.create-promotion-form .input-div-logo label {
+margin-right: 5px;
+width: 110px;
+font-size: 18px;
+font-weight: bold;
+align-self: center  ;
+}
+.create-promotion-form .input-div select {
+  width: 80%;
+  height: 30px;
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.create-promotion-form .input-div input{
+background-color: transparent;
+border: none;
+border-bottom: 1.5px solid var(--text-color-rich-black);
+font-size: 17px;
+width: 75%;
+height: 25px;
+overflow: visible;
+}
+.create-promotion-form .input-div #sconto {
+  width: min-content;
+  margin-left: 30px;
+  margin: 0;
+  width: 40px;
+}
+.create-promotion-form .input-div #tempoFruizione {
+  width: min-content;
+  margin-left: 30px;
+  height: 25px;
+  border: none;           
+}
+.create-promotion-form .input-div input:focus{
+outline: none;
+}
+
+.create-promotion-form .input-div>p {
+padding: 0;
+margin: 0;
+height:fit-content;
+flex-wrap: wrap;
+}
+
+/*Errori*/
+.create-promotion-form .input-div .errors {
+  position: absolute;
+  transform: translateY(20px);
+  list-style: none;
+}
+.create-promotion-form .input-div.discount .errors{
+  position:absolute;
+  transform: translateY(29px);
+  list-style: none;
+}
+.create-promotion-form .input-div .errors li {
+  transform: translateX(80px);
+  color: var(--error-color);
+}
+
+/*Logo*/
+.create-promotion-form .input-div-logo input[type="file"] {
+display: none;
+}
+
+.create-promotion-form .input-div-logo> div .label-input-logo {
+background-color: var(--oxford-blue);
+color: var(--background-color-platino);
+padding: 7px 15px;
+border-radius: 7px;
+font-size: 15px;
+width: auto;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.create-promotion-form .input-div-logo> div .label-input-logo:hover {
+box-shadow: 0 0 10px 0 #0d1b2a8b;
+}
+.create-promotion-form .input-div-logo> div .label-input-logo:active {
+scale: 0.90;
+}
+
+.create-promotion-form .input-div-logo> div {
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+}
+.create-promotion-form .input-div-logo> div .display-logo {
+display: none;
+}
+.create-promotion-form .input-div-logo> div .display-logo>img{
+max-height: 110px;
+min-height: 90px;
+max-width: 300px;
+min-width: 230px;
+object-fit:contain;
+}
+
+/*Sconto*/
+.create-promotion-form .input-div.discount input[type="number"]::-webkit-outer-spin-button,
+.create-promotion-form .input-div.discount input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/*button section*/
+.create-promotion-form .btn-section {
+display: flex;
+justify-content: center;
+align-items: center;
+margin:40px 0;
+cursor: pointer;
+}
+.create-promotion-form .btn-section>input {
+text-decoration: none;
+font-size: 20px;  
+color: var(--background-color-platino);
+background-color: var(--oxford-blue);
+border: none;
+border-radius: 7px;
+padding: 13px 25px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.create-promotion-form .btn-section>input:hover {
+box-shadow: 0px 0px 10px 1px #2f649dbd;
+scale: 1.05;
+}
+.create-promotion-form .btn-section>input:active {
+scale: 0.95;
+}

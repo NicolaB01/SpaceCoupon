@@ -1,0 +1,27 @@
+.message-status {
+  width: 60%;
+  height: 60px;
+  max-width: 1100px;
+  margin: 50px 0 0 0;
+  font-size: 16px;
+}
+.message-status .message-positive,
+.message-status .message-negative {
+  display: flex;
+  height: 100%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  color: green;
+  background-color: rgba(133, 222, 133, 0.733);
+  border: 1.5px solid green;
+}
+.message-status .message-negative  {
+  color: red;
+  background-color: rgb(247, 141, 141);
+  border: 1.5px solid red;
+}
+.message-status .message-positive i,
+.message-status .message-negative i{
+  scale: 1.8;
+}

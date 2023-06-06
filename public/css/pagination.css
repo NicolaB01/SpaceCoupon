@@ -1,0 +1,41 @@
+.pagination {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+
+.pagination .links {
+  display: flex;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.pagination a, .pagination > i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 4px;
+  font-size: 22px;
+  width: 22px;
+  border-radius: 7px;
+  color:var(--oxford-blue);
+  border: 1px solid var(--oxford-blue);
+  background-color: var( --background-color-platino);
+} 
+.pagination > i {
+  border: none;
+  background-color:transparent;
+  color: transparent;
+}
+.pagination .links .link.active {
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+}
+.pagination a:hover {
+  scale: 1.07;
+}
+.pagination a:active {
+  scale: 0.90;
+}

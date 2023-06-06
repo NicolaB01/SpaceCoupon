@@ -1,0 +1,102 @@
+/* HEADER */
+header {
+  background-color: var(--background-color-platino);
+  box-shadow: 0px 0px 10px 0px var(  --text-color-rich-black);
+  top: 0;
+  padding: 10px 0 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar {
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo > img {
+  width: 90px;
+  height: 90px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.navbar .links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .links li{
+  list-style: none;
+}
+
+
+.navbar .links li a{
+  position: relative;
+  font-size: 1.2rem;
+  transition: 0.25s;
+  text-decoration: none;
+  transition: 0.25s;
+  color: var(--text-color-rich-black);
+}
+.navbar .links li a.active {
+  border-bottom: 2px solid var(--text-color-rich-black);
+  pointer-events: none;
+}
+
+.navbar .links li a:hover {
+  color: var(--text-color-rich-black);
+}
+
+.navbar .links li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--text-color-rich-black);
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navbar .links a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+/*login button*/
+.btn-login {
+  background-color: var(--Y-blue);
+  color: var(--background-color-platino);
+  padding: 12px 24px;
+  margin-right: 20px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.05;
+}
+
+.btn-login:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 45px 0px #415a779f;
+  
+}
+
+.btn-login:active {
+  scale: 0.95;
+}

@@ -1,0 +1,29 @@
+.who-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 900px;
+    height: auto;
+  }
+  .who-div h2 {
+    font-size: 35px;
+    margin: 50px 0 10px 0;
+    color: var(--text-color-rich-black);
+  }
+  .who-div p {
+    background-color: var(--oxford-blue);
+    padding: 25px;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 19px;
+    word-spacing: 5px;
+    color: var(--background-color-platino);
+  }
+  .who-div .doc {
+    text-align: center;
+  }
+  .who-div .doc a{
+    text-decoration: underline;
+    color: var(--background-color-platino);
+  }

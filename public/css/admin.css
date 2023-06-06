@@ -1,0 +1,364 @@
+/*ADMIN*/
+/*HEADER ADMIN*/
+.header-admin {
+  height: 90px;
+  width: 100%;
+  background-color: var(--oxford-blue);
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;    
+}
+
+.header-admin .logo {
+  margin-left: 50px;
+}
+.header-admin .logo> img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.btn-admin {
+  margin-right: 50px;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;    
+}
+
+.btn-admin .btn-preview-site, 
+.btn-admin .btn-logout-admin {
+  background-color: var(--background-color-platino);
+  color: var(--Y-blue);
+  padding: 12px 24px;
+  margin-left: 20px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-admin .btn-preview-site:hover, 
+.btn-admin .btn-logout-admin:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 45px 0px #778da9bd;  
+}
+
+.btn-admin .btn-profilo-staff:active, 
+.btn-admin .btn-logout-admin:active {
+  scale: 0.95;
+}
+/*NAVBAR ADMIN*/
+.navbar-home-admin {
+background: var(--Y-blue);
+position: fixed;
+width: 14.3%;
+min-width: 180px;
+top: 90px;
+bottom: 0;
+display: flex;
+justify-content: center;
+padding-top: 50px;
+z-index: 1;
+}
+.navbar-home-admin  .links-btn-admin{
+display: flex;
+flex-direction: column;
+align-items: left;
+width: 100%;
+}
+.navbar-home-admin  .links-btn-admin>a{
+text-decoration: none;
+font-size: 1.1rem;
+color: var(--background-color-platino);
+  transition: 0.25s;
+  padding: 15px 0 15px 40px;
+}
+
+.navbar-home-admin .links-btn-admin>a:hover {
+scale: 1.05;
+text-decoration: underline;
+}
+.navbar-home-admin  .links-btn-admin>a.active:hover{
+scale: 1;
+text-decoration: none;
+}
+.navbar-home-admin  .links-btn-admin>a.active {
+border-left: 12px solid var(--oxford-blue);
+padding-left: 28px;
+background-color: #0d1b2a8b;
+pointer-events: none;
+
+}
+
+/*MAIN ADMIN*/
+.main-admin {
+margin-top: 90px;
+background-color: var(--background-color-platino);
+width: 100%;
+height: auto;
+display: grid;
+grid-template-columns: 1fr 6fr;
+}
+/*VISUALIZZAZIONE AZIENDE, STAF, FAQ, UTENTI*/
+.admin-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+  color: var(--text-color-rich-black);
+  background-color: transparent;
+}
+.admin-section h1{
+  margin: 40px 0 0 0;
+}
+.admin-section .admin-divider {
+  height: 55px;
+}
+.admin-section table {
+  width: 80%;
+  max-width: 1100px;
+  margin-bottom: 50px;
+  border: 1.5px solid var(--text-color-rich-black);
+  background-color: white;
+}
+.admin-section table th {
+  text-align: center;
+  border: 1.5px solid #0d1b2a70;
+  max-width: 400px;
+}
+.admin-section table td{
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  border: 1.5px solid #0d1b2a70;
+  overflow: ellipsis;
+  word-wrap: break-word;
+  padding: 5px;
+}
+.admin-section table td img {
+  margin: 10px;
+  height: 65px;
+  width: 120px;
+  object-fit: contain;
+}
+.admin-section table .btn-action div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.admin-section table .btn-action div a,
+.admin-section table .btn-action div .delete-btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  height: min-content;
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+  border-radius: 5px;
+  border: none;
+  transition: 0.25s;
+  font-size: 16px;
+}
+.admin-section table .btn-action div a:hover{
+  scale: 1.1;
+  background-color: rgb(195, 133, 19);
+}
+.admin-section table .btn-action div .delete-btn:hover {
+  scale: 1.1;
+  background-color: rgb(201, 34, 34);
+}
+
+.admin-section table .btn-action div #mostra-coupon-utente:hover{
+  scale: 1.1;
+  background-color: rgb(26, 180, 31);
+}
+
+.admin-section table .btn-action div a:active,
+.admin-section table .btn-action div .delete-btn:active{
+  scale: 0.9;
+}
+
+#eliminaButton {
+  text-decoration: none;
+  padding: 5px 10px;
+  height: min-content;
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+#eliminaButton:hover {
+  scale: 1.1;
+  background-color: rgb(201, 34, 34);
+}
+
+#eliminaButton:active{
+  scale: 0.9;
+}
+
+.btn-add-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.btn-add-section > a{
+  height: min-content;
+  width: auto;
+  border: 1.5px solid var(--text-color-rich-black);
+  border-radius: 2px;
+  background-color: white;
+  color: var(--text-color-rich-black);
+  box-shadow: 0px 0 8px 0px #0d1b2a8b;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.25s;
+  font-size: 16px;
+}
+.btn-add-section > a i{
+  margin-left: 10px;
+}
+.btn-add-section > a:hover{
+  transform: translateY(-2px);
+  box-shadow: 0px 0 25px 0px #0d1b2a8b;
+}
+
+.btn-add-section > a:active {
+  scale: 0.90;
+}
+
+/*AGGIUNGI AZIENDA, STAFF, FAQ*/
+.admin-add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.admin-add-container .header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
+}
+.admin-add-container  .header> a{
+text-decoration: none;
+color: var(--text-color-rich-black);
+  transition: 0.25s;
+  text-align: center;
+}
+.admin-add-container  .header> a:hover{
+color: var(--Y-blue);
+}
+.admin-add-container  .header>a:active{
+color:var(--silver-blue);
+}
+.admin-add-container  .header>h2 {
+font-size: 30px;
+margin: 0 35% 0 0;
+text-align: center;
+padding: 0;
+}
+
+.user-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 3;
+}
+
+/* COUPON */
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.coupon-user {
+  position: relative;
+  height: 180px;
+  width: 390px;
+  background-color: var(--background-color-platino); 
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  gap: 20px;
+  border: 2px solid var(--Y-blue);
+  padding: 10px 5px;
+}
+
+.dati-utente, .dettagli-coupon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+}
+
+.dettagli-coupon h2, .dati-utente h2{
+  color: var(--text-color-rich-black);
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.dettagli-coupon p, .dati-utente p {
+  padding: 7px 10px;
+  margin: 0;
+}
+
+.nome-cognome-utente {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-close-coupon-utente {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--background-color-platino);
+  color: var(--text-color-rich-black);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.icon-close-coupon-utente:hover {
+  scale: 1.1;
+}
+
+.icon-close-coupon-utente:active {
+  scale: 0.9;
+}
+
+#nomedellutente, #cognomedellutente {
+  padding: 6px 4px;
+  margin: 0;
+}

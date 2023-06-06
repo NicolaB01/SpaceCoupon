@@ -1,0 +1,30 @@
+/*INDEX*/
+:root {
+  --text-color-rich-black:#0D1B2A;
+  --background-color-platino:#E0E1DD;
+  --oxford-blue:#1B263B;
+  --Y-blue: #415A77;
+  --silver-blue:#778DA9;
+  --error-color:#c40000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, Arial;
+  box-sizing: border-box;
+  background-color: var(--background-color-platino);
+}
+
+main  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  padding: 0;
+}
+  

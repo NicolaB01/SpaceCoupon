@@ -1,0 +1,297 @@
+.promo-title {
+    align-self: center;
+}
+
+.promo-title h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+    align-self: center;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.torna-indietro-visualizza-promo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.btn-go-back-from-coupon {
+  text-decoration: none;
+  color: var(--text-color-rich-black);
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 80px;
+}
+
+.btn-go-back-from-coupon:hover {
+  color: var(--silver-blue);
+}
+
+.btn-go-back-from-coupon:active {
+  scale: 0.9;
+}
+
+.promo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+  }
+  
+  .div-promo-coupon {
+    position: relative;
+    width: 60%;
+    max-width: 1000px;
+    height: 100%;
+    background-color: var(--silver-blue); 
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--Y-blue);
+    box-shadow: 0px 0 40px 0px #0d1b2a8b;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Info Azienda */
+  .info-azienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 180px;
+    width: 100%;
+  }
+
+  .info-azienda img {
+    width: 220px;
+    height: 100px;
+    object-fit: contain;
+    margin: 10px;
+  }
+
+  .info-azienda h2{
+    font-size: 50px;
+    padding: 0;
+    margin: 0 auto;
+    color: var(--text-color-rich-black);
+  }
+
+  .div-promo-coupon .discount {
+    font: bold;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    color: var(--background-color-platino);
+    background-color: var(--oxford-blue);
+    width: 100%;
+  }
+
+  .div-promo-coupon .discount h2 {
+    margin: 15px;
+  }
+
+  .div-promo-coupon hr {
+    border: 2.5px dashed white;
+    width: 100%;
+    margin: 0;
+  }
+
+  .grid-promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    color: var(--background-color-platino);
+    background-color: var(--Y-blue);
+    width: 100%;
+  }
+
+  .grid-stampa-container hr {
+    border: 1.5px solid var(--background-color-platino);
+    width: calc(100% + 80px);
+    margin-left: -40px;
+  }
+
+  .promo-campo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 0;
+    font-size: 30px;
+    width: 60%;
+  }
+
+  .promo-campo h2{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 210px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    height: auto;
+  }
+  
+  .promo-campo p {
+    font-size: 16px;
+    max-width: 400px;
+    word-wrap: break-word;
+    text-decoration: none;
+    text-align: left;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .grid-promo-container h1 {
+    font-size: 26px;
+    color: var(--text-color-rich-black);
+    margin: 10px 0 0 0;
+  }
+
+  .bottom-promo{
+    width: 100%;
+    display: flex; 
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px dashed var(--text-color-rich-black);
+  }
+  .bottom-promo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-promo .btn-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .bottom-promo .btn-section a{
+    width: auto;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--oxford-blue);
+    color: var(--background-color-platino);
+    box-shadow: 0px 0 8px 0px #0d1b2a8b;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+  transition: 0.25s;
+  margin: 20px;
+  }
+  
+  .bottom-promo .btn-section a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 0 25px 0px #0d1b2a8b;
+  }
+
+  .bottom-promo  a:active {
+    scale: 0.90;
+  }
+
+  .button-ritira {
+    background-color: var(--oxford-blue);
+    color: var(--background-color-platino);
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.05;
+  transition: 0.25s;
+  margin: 20px;
+  }
+
+  .button-ritira:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 45px 0px #415a779f;
+  }
+
+  .button-ritira:active {
+    scale: 0.95;
+  }
+
+  /* Stile per il contenitore dell'alert */
+.my-swal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 9999;
+  align-items: center;
+}
+
+/* Stile per il popup dell'alert */
+.my-swal-popup {
+  width: 400px;
+  height: 200px;
+  background-color: var(--background-color-platino);
+  border: 2px solid var(--oxford-blue);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Stile per il titolo dell'alert */
+.my-swal-popup  h2{
+  font-size: 26px;
+  padding: 20px 0 5px 0;
+  margin: 0 auto;
+  color: var(--text-color-rich-black);
+}
+
+/* Stile per il testo dell'alert */
+.my-swal-text {
+  font-size: 15px;
+  height: 20px;
+  text-decoration: none;
+  text-align: left;
+  padding: 0;
+  margin: 10px;
+}
+
+/* Stile per il pulsante di conferma dell'alert */
+.my-swal-confirm-button, .my-swal-cancel-button  {
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.05;
+  margin: 10px 10px 0 10px;
+}
+
+.swal2-timer-progress-bar-container {
+  display: none;
+}
+
+.my-swal-confirm-button:hover, .my-swal-cancel-button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 45px 0px #415a779f;
+}  
+.my-swal-confirm-button:active, .my-swal-cancel-button:active {
+  scale: 0.95;
+}

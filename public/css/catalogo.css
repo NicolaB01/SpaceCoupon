@@ -1,0 +1,250 @@
+/*CATALOGO dove va inserita la sezione dei coupon o delle aziende*/
+.catalogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-platino);
+  height: auto;
+}
+
+/*Pagina Catalogo coupon/aziende*/
+.pag-catalogo {
+  display: grid;
+  width: 100%;
+  max-width: 900px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  vertical-align: center;
+}
+
+.pag-catalogo-aziende {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  vertical-align: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
+/*Aziende*/
+.template-aziende {
+  width: 60%;
+  height: auto;
+  background-color: transparent;
+  border: 1.5px solid var(--oxford-blue);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 0px 10px 0px var(--Y-blue);
+}
+/*parte superiore*/
+.template-aziende .left-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+.template-aziende .left-info .logo-aziende {
+  height: auto;
+  width: 60%;
+  max-width: 140px;
+  max-height: 55px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.template-aziende .left-info img {
+  height: auto;
+  width: 60%;
+  max-width: 140px;
+  max-height: 55px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.template-aziende .left-info a {
+  display: flex;
+  text-decoration: none;
+  color: var(--background-color-platino);
+  background-color: var(--oxford-blue);
+  font-size: 18px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 0 20px;
+  transition: 0.25s;
+  box-shadow: 0px 0px 5px 0px var(--text-color-rich-black);
+
+}
+.template-aziende .left-info a img {
+  margin-top: 2px;
+  color: var(--background-color-platino);
+}
+.template-aziende .left-info a:hover {
+  scale: 1.05;
+}
+.template-aziende .left-info a:active {
+  scale: 0.95;
+}
+
+
+/*parte descrittiva*/
+.template-aziende .info {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+  box-shadow: 10px 0px 100px 0px var(--text-color-rich-black);
+}
+.template-aziende .info .title {
+  font-size: 18px;
+  margin: 5px;
+  letter-spacing: 1.5px;
+}
+
+.template-aziende .info .text {
+  color: white;
+  width:82%;
+  font-size: 16px;
+  margin: 5px 10px;
+  padding: 0;
+}
+
+
+/*Stile per singola azienda*/
+.div-singola-azienda {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-singola-azienda hr[class="hr-singola-azienda"] {
+  align-self:center;
+  margin:0;
+  width: 100%;
+  border: 2px dashed var(--oxford-blue);
+  background-color: var(--background-color-platino);
+}
+
+.template-azienda {
+  width: 100%;
+  height: auto;
+  margin: 30px;
+  background-color: var(--oxford-blue);
+  border: 2px solid var(--oxford-blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 10px 0px var(--Y-blue);
+  padding-bottom: 5px;
+}
+
+/*parte superiore*/
+.top-info-azienda {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--silver-blue);
+  background-color: white;
+  display: flex; 
+  align-items: center;
+}
+
+.top-info-azienda .logo-azienda {
+  height: 80px;
+  width: 100%;
+  object-fit: contain;
+  margin: 40px 20px;
+}
+
+.template-azienda .info {
+  background-color: var(--oxford-blue);
+  box-shadow: 0 0 100px -10px var(--oxford-blue);
+  color: var(--background-color-platino);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  align-items: center;
+}
+
+.template-azienda .info .title {
+  font-size: 20px;
+  margin:10px 0 10px 200px;
+  text-align: left;
+  letter-spacing: 1.5px;
+}
+
+.template-azienda .info> p {
+  font-size: 16px;
+  margin: 5px 0;
+  padding: 0;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.template-azienda .promo-per-azienda {
+  display: flex;
+  padding: 20px;
+  background-color: var(--background-color-platino);
+}
+
+a[class="catalogo"] {
+  text-decoration: none;
+}
+
+#promotion-id {
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: 25px bold;
+  color: var(--background-color-platino);
+}
+
+/* bottone crea promozione sotto la searchbar*/
+.btn-create-promo-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  height: 90px;
+  width: 100%;
+}
+.btn-create-promo-section > a{
+  height: min-content;
+  width: auto;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--oxford-blue);
+  color: var(--background-color-platino);
+  box-shadow: 0px 0 8px 0px #0d1b2a8b;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.25s;
+  font-size: 20px;
+}
+.btn-create-promo-section > a i{
+  margin-left: 10px;
+}
+.btn-create-promo-section > a:hover{
+  transform: translateY(-2px);
+  box-shadow: 0px 0 25px 0px #0d1b2a8b;
+}
+
+.btn-create-promo-section > a:active {
+  scale: 0.90;
+}
