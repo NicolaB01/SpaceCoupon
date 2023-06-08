@@ -17,7 +17,6 @@ class Company extends Model
         'tipologia', 
         'descrizione', 
         'eliminata',
-        'numeroPromozioni', 
         'idUtente',
     ];
     public $timestamps = false;

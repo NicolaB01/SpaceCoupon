@@ -58,6 +58,10 @@ Route::middleware(['can:isUser'])->prefix('User')->group(function () {
 
     Route::get('/stampa/{idCoupon}', [CouponController::class, 'show'])
         ->name('stampa.coupon');
+    
+    Route::get('/creaCoupon/{idPromozione}', function () {
+        abort(403);
+    });
 
     Route::post('/creaCoupon/{idPromozione}', [CouponController::class, 'store'])
         ->name('crea.coupon');
@@ -85,6 +89,10 @@ Route::middleware(['can:isStaff'])->prefix('Staff')->group(function () {
     Route::post('/modificaPromozione/{idPromozione}', [PromotionController::class, 'update'])
         ->name('update.promozione');
     
+    Route::get('/eliminaPromozione/{idPromozione}', function () {
+        abort(403);
+    });
+
     Route::post('/eliminaPromozione/{idPromozione}', [PromotionController::class, 'destroy'])
         ->name('delete.promozione');
 });
@@ -93,19 +101,23 @@ Route::middleware(['can:isAdmin'])->prefix('Admin')->group(function () {
     Route::get('/listaAziende', [CompanyController::class, 'indexAdmin'])
         ->name('admin.aziende');
     
-    Route::get('/creaAziende', [CompanyController::class, 'create'])
+    Route::get('/creaAzienda', [CompanyController::class, 'create'])
         ->name('admin.create.azienda');
     
-    Route::post('/creaAziende', [CompanyController::class, 'store'])
+    Route::post('/creaAzienda', [CompanyController::class, 'store'])
         ->name('admin.store.azienda');
 
-    Route::get('/modificaAziende/{idAzienda}', [CompanyController::class, 'edit'])
+    Route::get('/modificaAzienda/{idAzienda}', [CompanyController::class, 'edit'])
         ->name('admin.edit.azienda');
     
-    Route::post('/modificaAziende/{idAzienda}', [CompanyController::class, 'update'])
+    Route::post('/modificaAzienda/{idAzienda}', [CompanyController::class, 'update'])
         ->name('admin.update.azienda');
 
-    Route::post('/eliminaAziende/{idAzienda}', [CompanyController::class, 'destroy'])
+    Route::get('/eliminaAzienda/{idAzienda}', function () {
+        abort(403);
+    });
+
+    Route::post('/eliminaAzienda/{idAzienda}', [CompanyController::class, 'destroy'])
         ->name('admin.delete.azienda');
 
     Route::get('/listaStaff', [UserController::class, 'indexStaff'])
@@ -117,17 +129,25 @@ Route::middleware(['can:isAdmin'])->prefix('Admin')->group(function () {
     Route::post('/modificaStaff/{idStaff}', [UserController::class, 'updateStaff'])
         ->name('admin.update.staff');
 
+    Route::get('/eliminaStaff/{idStaff}', function () {
+        abort(403);
+    });
+
     Route::post('/eliminaStaff/{idStaff}', [UserController::class, 'destroyStaff'])
         ->name('admin.delete.staff');
     
     Route::get('/creaStaff', [UserController::class, 'createStaff'])
         ->name('admin.create.staff');
     
-    Route::post('/storeStaff', [UserController::class, 'storeStaff'])
+    Route::post('/creaStaff', [UserController::class, 'storeStaff'])
         ->name('admin.store.staff');
     
     Route::get('/listaUtenti', [UserController::class, 'indexUtenti'])
         ->name('admin.utenti');
+
+    Route::get('/eliminaUtente/{idUtente}', function () {
+        abort(403);
+    });
 
     Route::post('/eliminaUtente/{idUtente}', [UserController::class, 'destroyUtente'])
         ->name('admin.delete.user');
@@ -147,6 +167,10 @@ Route::middleware(['can:isAdmin'])->prefix('Admin')->group(function () {
     Route::post('/modificaFaq/{idFaq}', [FaqController::class, 'update'])
         ->name('admin.update.faq');
     
+    Route::get('/eliminaFaq/{idFaq}', function () {
+        abort(403);
+    });
+
     Route::post('/eliminaFaq/{idFaq}', [FaqController::class, 'destroy'])
         ->name('admin.delete.faq');
     

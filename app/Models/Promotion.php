@@ -71,6 +71,7 @@ class Promotion extends Model
                 }
             }
         }
+        return null;
     }
 
     public function Coupons() {

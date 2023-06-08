@@ -29,11 +29,15 @@ class Coupon extends Model
     }
 
     public function getCouponByPromozione($promozione) {
-        $idUtente = auth()->user()->idUtente;
-        $coupons = $promozione->Coupons()
-                            ->where('idUtente', $idUtente)
-                            ->first();
-        return $coupons;
+        if(!is_null(auth()->user())) {
+            $idUtente = auth()->user()->idUtente;
+            $coupons = $promozione->Coupons()
+                                ->where('idUtente', $idUtente)
+                                ->first();
+            return $coupons;
+        };
+        
+        return null;
     }
 
     public function Promozione() {
