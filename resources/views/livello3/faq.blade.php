@@ -1,5 +1,4 @@
 @extends('layout/bodyAdmin')
-@section('title', 'SpaceCoupon.com')
 
 @section('content')        
     <div class="admin-section">

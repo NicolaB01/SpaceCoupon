@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Visualizza promozione')
 
 @section('content')
     <div class="torna-indietro-visualizza-promo">

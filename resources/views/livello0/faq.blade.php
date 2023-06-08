@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Chi siamo')
 
 @section('content')
    <section class="faq-section">

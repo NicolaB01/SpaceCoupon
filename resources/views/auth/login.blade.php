@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Login')
 
 @section('content')
 <section class="login-section">

@@ -1,5 +1,4 @@
 @extends('layout/bodyAdmin')
-@section('title', 'SpaceCoupon.com')
 
 @section('scripts')
 <script src="{{ asset('js/logo.js') }}" defer></script>

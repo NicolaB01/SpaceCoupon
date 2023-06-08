@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Aziende')
 
 @section('content')
         @include('layout/search-bar', ['redirect' => 'aziende'])

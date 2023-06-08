@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'SpaceCoupon.com')
 
 @section('content')
     <div class="create-promotion"> 

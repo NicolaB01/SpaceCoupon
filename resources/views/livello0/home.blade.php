@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Home')
 
 @section('scripts')
 <script src="{{ asset('js/carousel.js') }}" defer></script>

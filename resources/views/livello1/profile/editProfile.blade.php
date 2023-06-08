@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Modifica profilo')
 
 @section('content')
     <section class="profile-section">

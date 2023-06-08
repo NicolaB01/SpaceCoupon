@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'Registrazione')
 
 @section('content')
 <!--div esterna-->

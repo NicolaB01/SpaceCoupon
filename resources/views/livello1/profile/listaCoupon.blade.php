@@ -1,5 +1,4 @@
 @extends('layout/body')
-@section('title', 'I miei coupon')
 
 @section('content')
     <section class="profile-section">

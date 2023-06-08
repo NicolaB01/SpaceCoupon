@@ -1,5 +1,4 @@
 @extends('layout/bodyAdmin')
-@section('title', 'Visualizza promozione')
 
 @section('content')
     <div>
