@@ -48,7 +48,11 @@ class Promotion extends Model
         
         if(!is_null($parole)) {
             foreach($parole as $parola) {
-                $promozioni->where('oggetto', 'LIKE', '%'.$parola.'%');
+                if($parola == '%' or $parola == '_'){
+                    $promozioni->where('oggetto', 'LIKE', '%'.'\\'.$parola.'%');
+                } else{
+                    $promozioni->where('oggetto', 'LIKE', '%'.$parola.'%');
+                }
             }
         }
 
