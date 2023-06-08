@@ -28,7 +28,7 @@
 .answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s;
+    transition: ease-in-out 0.5s;
     background-color: var(--oxford-blue);
 }
 .question h3, .answer p {
@@ -49,7 +49,7 @@
     border-bottom-right-radius: 7px;
 }
 .faq-div svg {
-    transition: transform 0.2s;
+    transition: transform 0.6s;
     margin-right: 25px;
 }
 .faq-div.active svg {
