@@ -91,12 +91,12 @@ class UserController extends Controller
     {
         user::findOrFail($idUtente)->delete();
 
-        return redirect()->to(session()->get('url'))->with('status', 'L\'utente è stato eliminato correttamente');
+        return redirect()->route('admin.utenti')->with('status', 'L\'utente è stato eliminato correttamente');
     }
     public function destroyStaff($idStaff)
     {
         user::findOrFail($idStaff)->delete();
 
-        return redirect()->to(session()->get('url'))->with('status', 'Il membro dello staff è stato eliminato correttamente');
+        return redirect()->route('admin.staff')->with('status', 'Il membro dello staff è stato eliminato correttamente');
     }
 }

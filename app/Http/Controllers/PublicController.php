@@ -19,11 +19,11 @@ class PublicController extends Controller
 
         session()->put('pagina', 'home');
         session()->put('back', url()->current());
+        session()->put('url', url()->full());
+        session()->put('eliminata', url()->current());
 
         $aziende = $this->aziende->getWindowCompanies();
         $promozioni = $this->promozioni->getWindowPromotions();
-        
-        session()->put('url', url()->current());
 
         return view('livello0.home') 
             ->with('aziende', $aziende)

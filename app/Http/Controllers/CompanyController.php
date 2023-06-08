@@ -54,12 +54,12 @@ class CompanyController extends Controller
     public function show($idAzienda)
     {
         session()->forget('pagina');
+        session()->put('url', url()->full());
+        session()->put('eliminata', url()->current());
 
         $azienda = company::findOrFail($idAzienda);
 
         $promozioni = $this->promozioni->cercaPromozioni(Promotion::where('eliminata', '=', 0), $azienda->ragioneSociale)->paginate(16)->withQueryString();
-        
-        session()->put('url', url()->full());
 
         return view('livello0.azienda')
                 ->with('azienda', $azienda)
@@ -143,6 +143,6 @@ class CompanyController extends Controller
             'eliminata' => true,
         ]);
 
-        return redirect()->to(session()->get('url'))->with('status', 'Azienda rimossa correttamente');
+        return redirect()->route('admin.aziende')->with('status', 'Azienda rimossa correttamente');
     }
 }

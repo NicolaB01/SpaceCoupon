@@ -77,6 +77,6 @@ class FaqController extends Controller
     {
         faq::findOrFail($idFAQ)->delete();
 
-        return redirect()->to(session()->get('url'))->with('status', 'La faq è stata eliminata correttamente');
+        return redirect()->route('admin.faq')->with('status', 'La faq è stata eliminata correttamente');
     }
 }

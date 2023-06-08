@@ -23,6 +23,7 @@ class PromotionController extends Controller
     {
         session()->put('pagina', 'promozioni');
         session()->put('url', url()->full());
+        session()->put('eliminata', url()->current());
 
         $promozioni = $this->promozioni->cercaPromozioni(Promotion::where('eliminata', '=', 0), $request->search)->paginate(16)->withQueryString();
 
@@ -124,7 +125,7 @@ class PromotionController extends Controller
             'eliminata' => true,
         ]);
 
-        return redirect()->to(session()->get('url'))->with('status', 'La promozione è stata eliminata correttamente');
+        return redirect()->to(session()->get('eliminata'))->with('status', 'La promozione è stata eliminata correttamente');
     }
 
 }
