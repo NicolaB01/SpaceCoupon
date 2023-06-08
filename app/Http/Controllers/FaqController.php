@@ -28,7 +28,7 @@ class FaqController extends Controller
         session()->put('pagina','faq');
         session()->put('url', url()->full());
 
-        $faqs = faq::paginate(6)->withQueryString();
+        $faqs = faq::paginate(6);
 
         return view('livello3.faq')
                 ->with('faqs', $faqs);

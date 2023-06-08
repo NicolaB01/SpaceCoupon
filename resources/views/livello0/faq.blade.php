@@ -4,16 +4,7 @@
    <section class="faq-section">
         <h2 class="faq-title">FAQs</h2>
         @if($faqs->total() == 0)
-            @guest
-                @include('layout/error', ['tipoErrore' => 4])
-            @endguest
-            @can('isUser')
-                @include('layout/error', ['tipoErrore' => 4])
-            @endcan
-            @can('isStaff')
-                @include('layout/error', ['tipoErrore' => 9])
-            @endcan
-
+            @include('layout/error', ['tipoErrore' => 9])
         @else
             @foreach($faqs as $faq)
             <div class="faq-div">

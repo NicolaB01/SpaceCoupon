@@ -25,7 +25,7 @@
         </div>
         <hr class="hr-singola-azienda">
         <div class="promo-per-azienda">  
-            @include('layout/listaPromozioni', ['promozioni' => $promozioni, 'ricerca' => false])
+            @include('layout/listaPromozioni', ['ricerca' => false])
         </div>
     </div>
 </div>                

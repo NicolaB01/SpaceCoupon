@@ -91,8 +91,9 @@ class CompanyController extends Controller
             $destinationPath = public_path() . '/images/loghiAziende';
             $image->move($destinationPath, $imageName);
         };
-
-	session()->flash('status', 'Azienda creata correttamente');
+        
+	    session()->flash('status', 'Azienda creata correttamente');
+        
         return response()->json(['redirect' => route('admin.aziende')]);
     }
 
@@ -101,6 +102,7 @@ class CompanyController extends Controller
         session()->put('pagina', 'aziende');
         
         $azienda = Company::findOrFail($idAzienda);
+        
         return view('livello3/aziendaEdit')
                 ->with('azienda', $azienda);
     }

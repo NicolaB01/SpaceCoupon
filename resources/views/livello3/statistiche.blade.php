@@ -8,6 +8,6 @@
             <p>{{ $numeroCoupon }} <i class="fa fa-ticket" style="margin-left:10px"></i></p>
         </div>
         @include('layout/search-bar', ['redirect' => 'admin.stats'])
-        @include('livello3/listaPromozioniStats', ['redirect' => 'admin.stats', 'ricerca' => $ricerca])
+        @include('livello3/listaPromozioniStats', ['promozioni' => $promozioni, 'ricerca' => $ricerca, 'redirect' => 'admin.stats'])
     </div>
 @endsection

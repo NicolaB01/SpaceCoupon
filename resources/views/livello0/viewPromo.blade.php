@@ -44,7 +44,7 @@
                 </div>
             @endguest
             @can('isUser')
-                @include('helpers/couponHelper', ['promozione' => $promozione, 'temp' => $coupon])
+                @include('helpers/couponHelper', ['promozione' => $promozione, 'coupon' => $coupon])
             @endcan
             @can('isStaff')
                 <div class="bottom-promo">

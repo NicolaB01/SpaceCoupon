@@ -9,6 +9,6 @@
         </div>
         @endcan
 
-        @include('layout/listaPromozioni', ['promozioni' => $promozioni, 'ricerca' => $ricerca, 'redirect' => 'catalogo'])
+        @include('layout/listaPromozioni', ['ricerca' => $ricerca, 'redirect' => 'catalogo'])
 @endsection
 

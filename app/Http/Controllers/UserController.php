@@ -46,8 +46,7 @@ class UserController extends Controller
 
     public function storeStaff(StaffRequest $request)
     {
-        $user = new user;
-        $staff = $user->create([
+        $this->user->create([
             'nome' => $request->nome,
             'cognome' => $request->cognome,
             'genere' => $request->genere,

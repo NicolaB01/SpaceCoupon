@@ -24,7 +24,7 @@ class UserProfileController extends Controller
             ->with('user', auth()->user());
     }
 
-    public function update(UserProfileUpdateRequest $request)
+    public function update(UserProfileUpdateRequest $request) 
     {
         $user = auth()->user();
 
