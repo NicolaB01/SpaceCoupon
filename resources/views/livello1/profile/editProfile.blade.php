@@ -6,7 +6,7 @@
         <div class="edit-profile-section">
             <div class="header-section">
                 <a href="{{route('profilo')}}" class="btn-go-back">
-                    <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/000000/arrow-pointing-left--v2.png" alt="arrow-pointing-left--v2"/>  Torna indietro
+                    <i class="fa fa-arrow-left" style="scale:0.9"></i> Torna indietro
                 </a>
                 <h2>Modifica il profilo</h2>
             </div>
