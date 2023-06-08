@@ -1,6 +1,3 @@
-@php
-    $coupon = $temp->getCouponByPromozione($promozione);
-@endphp
 @if($coupon)
     <div class="bottom-promo">
         <p>Hai già riscattato questa promozione,visualizza il coupon o scegline altre!</p>

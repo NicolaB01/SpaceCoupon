@@ -66,9 +66,10 @@ class PromotionController extends Controller
         session()->forget('pagina');
 
         $promozione = promotion::find($idPromozione);
+        $coupon = $this->coupon->getCouponByPromozione($promozione);
 
         return view('livello0.viewPromo')
-                ->with('coupon', $this->coupon)
+                ->with('coupon', $coupon)
                 ->with('promozione', $promozione);
     }
 
