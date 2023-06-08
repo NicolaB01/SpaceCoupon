@@ -31,7 +31,7 @@ class PromoRequest extends FormRequest
             'sconto' => 'required|integer|between:1,100',
             'oggetto' => 'required|string|max:255',
             'modalita' => 'required|string|max:255',
-            'tempoFruizione' => 'required|date|after:yesterday',
+            'tempoFruizione' => 'required|date|after:today',
             'luogoFruizione' => 'required|string|max:255',
         ];        
     }
