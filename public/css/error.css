@@ -50,3 +50,55 @@
 .error-btn a:active{
   scale: 0.9;
 }
+
+/*PAGE ERROR*/
+
+.wrapper-message-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--oxford-blue);
+}
+.wrapper-message-error .text_404,
+.wrapper-message-error .text_403 {
+  font-size: 130px;
+  margin: 100px 0 50px 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:600;
+  letter-spacing: -15px;
+  text-shadow: 10px 0px 0px #415a7788;
+  transform: translateX(-10px);
+}
+.wrapper-message-error .text_404  i,
+.wrapper-message-error .text_403  i  {
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 0px 0px var(--oxford-blue);
+  margin-left: 15px;
+}
+.wrapper-message-error .text_lost {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  text-shadow: 2px 2px 10px #415a7788;
+  font-family:'Times New Roman', Times, serif;
+}
+.wrapper-message-error a {
+  text-decoration: none;
+  color: var(--oxford-blue);
+  font-size: 20px;
+  border: 1.5px solid var(--oxford-blue);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 35px;
+  transition: 0.15s;
+}
+.wrapper-message-error a:hover{
+  scale: 1.05;
+  color: var( --background-color-platino);
+  background-color: var(--oxford-blue);
+  box-shadow: 0 0 20px #415a77b0;
+}
+.wrapper-message-error a:active{
+  scale: 0.95;
+}
