@@ -9,7 +9,7 @@
     <p class="text_404">4 
       <i class="fa fa-user-astronaut"></i> 
       4</p>
-    <p class="text_lost">La pagina che stai cercando <br />è dispera nello spazio.</p>
+    <p class="text_lost">La pagina che stai cercando <br />è dispersa nello spazio.</p>
     <a href="">Torna alla home</a>
 </div>
 @endsection
