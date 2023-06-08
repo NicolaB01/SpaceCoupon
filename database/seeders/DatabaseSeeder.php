@@ -96,9 +96,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \DB::table('faqs')->insert([
-            ['domanda' => 'Come posso registrarmi?', 'risposta' => 'Per registrarti, clicca sul pulsante di registrazione e completa il modulo con le tue informazioni.'],
-            ['domanda' => 'Come attivo il coupon?', 'risposta' => 'Per attivare il coupon, segui le istruzioni fornite sul sito durante il processo di acquisto.'],
-            ['domanda' => 'Posso restituire un prodotto acquistato con un coupon?', 'risposta' => 'Le politiche di restituzione dipendono dalle condizioni specifiche dell\'acquisto e delle promozioni. Ti consigliamo di consultare la nostra pagina delle politiche di reso per ulteriori informazioni.'],
+            ['domanda' => 'Come posso registrarmi?', 'risposta' => 'Per registrarti, clicca sul pulsante di registrazione all\'interno della login e completa il modulo con le tue informazioni.'],
+            ['domanda' => 'Come attivo il coupon?', 'risposta' => 'Per attivare il coupon, una volta selezionato il coupon che ti interessa basta premere sul bottone ritira.'],
+            ['domanda' => 'Come posso cercare le promozioni?', 'risposta' => 'Le promozioni sono elencate nel catalogo, se ti interessa una particolare promozione puoi cercare attraverso la barra di ricerca.'],
+            ['domanda' => 'Dove trovo i coupon che ho già riscattato?', 'risposta' => 'Le promozioni riscattate si trovano all\'interno della sezione I miei coupon che a sua volta si trova nel profilo dell\'utente.'],
+            ['domanda' => 'Come posso modificare i miei dati?', 'risposta' => 'Per modificare i tuoi dati personali, accedi al tuo account e vai alla sezione "Profilo" che si apre cliccando sul bottone in alto a destra con il nome dell\'utente. Qui potrai modificare i tuoi dati personali e aggiornarli.'],                  
         ]);
         
     }
