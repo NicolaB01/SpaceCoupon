@@ -36,7 +36,7 @@ class PromotionController extends Controller
     {
         session()->put('pagina', 'promozioni');
 
-        $aziende = company::where('eliminata', '=', 0);
+        $aziende = company::where('eliminata', '=', 0)->get();
 
         $nomeAziende = array();
 
