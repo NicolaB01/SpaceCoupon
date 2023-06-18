@@ -70,5 +70,10 @@
                 </div>
     </section>
     <!-- fine sezione migliori offerte -->
+    <section class="who-div">
+      <p class="doc">
+        Per avere maggiori informazioni sul progetto vedi la <a href="{{ asset('doc/documentazione_grp_10.pdf') }}"  target="_blank"> documentazione</a>
+      </p>
+    </section>
     @endif
 @endsection

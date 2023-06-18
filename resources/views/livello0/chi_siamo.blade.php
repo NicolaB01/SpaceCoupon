@@ -7,9 +7,4 @@
         Crediamo fermamente che risparmiare non debba significare rinunciare alla qualità. Pertanto, collaboriamo solo con marchi rinomati e affidabili per garantire che i nostri coupon siano validi e ti permettano di acquistare i prodotti che desideri al prezzo più conveniente.
       </p>
     </section>
-    <section class="who-div">
-      <p class="doc">
-        Per avere maggiori informazioni sul progetto vedi la <a href="{{ asset('doc/documentazione_grp_10.pdf') }}"  target="_blank"> documentazione</a>
-      </p>
-    </section>
 @endsection
